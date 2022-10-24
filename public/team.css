@@ -1,0 +1,76 @@
+.father{
+    display: flex;
+    height: 60vh;
+    width: 81vw;
+    background-color: transparent;
+    margin: 12vh auto 10rem auto;
+}
+.childhead{
+    display: flex;
+    height: 60vh;
+    width: 24vw;
+    background-color: transparent;
+    margin: auto;
+}
+.cardhead{
+    width: 20vw;
+    height: 56vh;
+    background-color:  rgb(0, 0, 0,0.6);
+    margin: auto;
+    border-radius: 20px;
+}
+.cardchild1{
+    height: 30vh;
+    width: 30vh;
+    background-color: beige;
+    margin: auto;
+    margin-top: 6vh;
+    display: flex;
+    border-radius: 20px;
+    background-size: cover;
+
+}
+.name{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin-top: 3vh;
+    align-items: center;
+    height: 6vh;
+    background-color: transparent;
+    font-size: 3.5vh;
+    font-weight: 550;
+}
+.name>span{
+    width: fit-content;
+    margin: auto;
+}
+.links{
+    display: flex;
+    width: 15vw;
+    height: 6vh;
+    background-color: transparent;
+    margin: auto;
+    margin-top: 1.5vh;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    display: block;
+    width: 3vw;
+    margin: auto;
+    height: auto;
+    padding: 0.2vw;
+}
+.btn>a>img{
+    width: 1.5vw;
+}
+#himanshu{
+    background-image: url("content\\himanshu.jpg");
+}
+#gagan{
+    background-image: url("content\\gagan.jpg");
+}
+#heet{
+    background-image: url("content\\heet.jpg");
+}
