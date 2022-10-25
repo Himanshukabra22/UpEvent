@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
-
-mongoose.connect("mongodb://localhost:27017/eventForm",{
+const {MONGO_URL} = require('../../ignore')
+mongoose.connect(MONGO_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     serverSelectionTimeoutMS: 5000,

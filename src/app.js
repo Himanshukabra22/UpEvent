@@ -2,14 +2,15 @@ const express = require('express')
 const mongoose = require('mongoose')
 const hbs = require('hbs')
 const path = require('path')
+const {PORT} = require('../ignore') //imported variable from ignore.js
 
-const port = process.env.PORT || 5500
+// const port = process.env.PORT || 5500
+const port = PORT
 
 const app = express();
-
 require('./db/conn');
-const router = require('./routers/router');
-app.use(router);
+// const router = ;
+app.use(require('./routers/router'));
 
 const collection1 = require('./models/collection1');
 app.use(express.json());
@@ -29,5 +30,5 @@ app.set("views", tempPath);
 
 
 app.listen(port,()=>{
-    console.log(`listening to port no. ${port}`);
+    console.log(`\n\nDeveloped by - 'LazyPeter'.\n\nhttp://localhost:${port}/home`);
 })

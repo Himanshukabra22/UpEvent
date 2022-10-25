@@ -23,7 +23,7 @@ router.post('/form',async(req,res)=>{
     })
     // let data = new collection1(req.body);
     let savedData = await data.save();
-    console.log(data);
+    // console.log(data);
     res.redirect("/home");
     }
     catch(e){
