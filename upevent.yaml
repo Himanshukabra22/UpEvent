@@ -1,0 +1,16 @@
+version: '3'
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=admin
+      - MONGO_INITDB_ROOT_PASSWORD=password
+  upevent:
+    image: upevent:0.0.1.RELEASE
+    ports:
+      - 8000:8000
+    depends_on:
+      - "mongodb"
+    restart: unless-stopped

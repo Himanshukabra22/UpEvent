@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="content\icon.png">
+    <title>UpEvent</title>
+</head>
+
+<body onload="myfunction()">
+    <!-- holla judges, welcome to our web structure! -->
+    <div class="main" id="main">
+        <div>
+            <header>
+                <div class="logo"><a href="/home"><img src="content\logopng.png" alt="logo" id="headlogo"
+                            title="UpEvent"></a></div>
+                <div class="navbar">
+                    <ul class="navbarul">
+                        <a href="/home">
+                            <button class="navbutton">
+                                <img src="content\Home-free-icon-font.png" alt="home" id="Home">
+                            </button>
+                        </a>
+                        <a href="/form">
+                            <button class="navbutton" title="Add Event">
+                                <img src="content\add-free-icon-font.png" alt="Add" id="Add">
+                            </button>
+                        </a>
+                        <a href="/team">
+                            <button class="navbutton" title="About Team">
+                                <img src="content\Users-free-icon-font.png" alt="Team" id="Team">
+                            </button></a>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div class="carddiv">
+            <div class="arrowleft">
+                <button class="slideshowbtn" onclick="lastevent()" title="last">
+                    <img src="content\right-arrow.png" alt="home" id="leftslide">
+                </button>
+            </div>
+            <div class="notifcard">
+                <!-- <h1>Notification will be added here</h1> -->
+                <div class="notifposter" id="notiposterid" onclick="slide()" title="Click to know more">
+                    <button id="abouteventicon" title="Click to read more"><img src="content\arrow-small-leftw.png"
+                            alt="" id="slideiconimg1"></button>
+                    <span id="eventname1">
+                        <img src="#" alt="nologo" id="eventlogo">
+                    </span>
+                </div>
+                <div id="eventinfo">
+                    {{!-- cardData --}}
+                </div>
+            </div>
+            <div class="arrowright">
+                <button class="slideshowbtn" onclick="nextevent()" title="next">
+                    <img src="content\right-arrow.png" alt="home" id="rightslide">
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer class="base">
+        <div>
+            <span>Created by team BRAINCODES for the purpose of</span>
+            <a href="https://devheat.live" target="_blank">
+                <img src="https://devheat.live/assets/header/devheat-logo.png" title="devheat.live" alt="devheatlogo">
+            </a>
+            <div class="eventbtns" id="basebtns">
+                <div>
+                    <button class="navbutton eventnavbtns" title="linkedin"><a
+                            href="https://www.linkedin.com/company/dsc-iiitsurat/" target="_blank"><img src="content\linkedin.png"
+                                id="takepart"></a></button>
+                    <button class="navbutton eventnavbtns" title="Instagram"><a
+                            href="https://instagram.com/gdsc_iiitsurat?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                                src="content\instagram.png" id="share"></a></button>
+                    <button class="navbutton eventnavbtns" title="IIIT Surat"><a href="http://www.iiitsurat.ac.in/" target="_blank"><img
+                                src="content\surat.png" id="more"></a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

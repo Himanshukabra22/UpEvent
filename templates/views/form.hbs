@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="team.css">
+    <link rel="stylesheet" href="form.css">
+    <script src="index.js"></script>
+    <link rel="icon" href="content\icon.png">
+    <title>UpEvent</title>
+</head>
+
+<body onload="myfunction()">
+    <!-- holla judges, welcome to our web structure! -->
+    <div class="main">
+        <div>
+            <header>
+                <div class="logo"><a href="/home"><img src="content\logopng.png" alt="logo" id="headlogo"
+                            title="UpEvent"></a></div>
+                <div class="navbar">
+                    <ul class="navbarul">
+                        <a href="/home">
+                        <button class="navbutton">
+                            <img src="content\Home-free-icon-font.png" alt="home" id="Home">
+                        </button>
+                        </a>
+                        <a href="/form">
+                            <button class="navbutton" title="Add Event">
+                                <img src="content\add-free-icon-font.png" alt="Add" id="Add">
+                            </button>
+                        </a>
+                        <a href="/team">
+                            <button class="navbutton" title="About Team">
+                                <img src="content\Users-free-icon-font.png" alt="Team" id="Team">
+                            </button></a>
+                    </ul>
+                </div>
+            </header>
+        </div>
+        <div class="formdiv">
+            <div class="formhead">
+                <p id="formheadtext">Add Event</p>
+            </div>
+            <form action="/form" id="formid" method="post">
+                <div class="detail">
+                    <div>
+                        <div id="evnameid2"> <span>Event name:&nbsp;</span> <input type="text" class="textbox1"
+                                id="EventName" name="eventname"> </div>
+                        <div id="organiserid2"> <span>Organiser:&nbsp;</span> <input type="text" id="Organiser"
+                                class="textbox1" name="organiser"> </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div>
+                        <div id="venueid2"> <span>Venue:&nbsp;</span> <input type="text" name="venue" class="textbox1">
+                        </div>
+                        <div id="plinkid2"> <span>Participation link:&nbsp;</span> <input type="text" name="plink"
+                                class="textbox1" id="plink"> </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div>
+                        <div id="dateid2"> <span>Event Date:&nbsp;&nbsp;</span> <input type="date"
+                                name="date" class="textbox1"> </div>
+                        <div id="timeid2"> <span>Time:&nbsp;&nbsp;</span> <input type="time" name="" id=""
+                                class="textbox1" name="time"> </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div>
+                        <div id="desid2"> <span>Description:&nbsp;&nbsp;</span> <input class="textbox1"
+                                id="Description" name="des"> </div>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div id="uploadid2"> <span>Upload Poster link (.jpg):&nbsp;&nbsp; </span> <input type="text"
+                            class="textbox1" id="posterfile" name="posterlink"> </div>
+                </div>
+                <div class="detail">
+                    <div>
+                        <div><input type="reset" class="frmbtns"></div>
+                        <div><input type="submit" class="frmbtns"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </form>
+    </div>
+    <footer class="base">
+        <div>
+            <span>Created by team BRAINCODES for the purpose of</span>
+            <a href="https://devheat.live/" target="_blank">
+                <img src="https://devheat.live/assets/header/devheat-logo.png" title="devheat.live" alt="devheatlogo">
+            </a>
+            <div class="eventbtns" id="basebtns">
+                <div>
+                    <button class="navbutton eventnavbtns" title="linkedin"><a
+                            href="https://www.linkedin.com/company/dsc-iiitsurat/" target="_blank"><img src="content\linkedin.png"
+                                id="takepart"></a></button>
+                    <button class="navbutton eventnavbtns" title="Instagram"><a
+                            href="https://instagram.com/gdsc_iiitsurat?igshid=YmMyMTA2M2Y=" target="_blank"><img
+                                src="content\instagram.png" id="share"></a></button>
+                    <button class="navbutton eventnavbtns" title="IIIT Surat"><a href="http://www.iiitsurat.ac.in/" target="_blank"><img
+                                src="content\surat.png" id="more"></a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
